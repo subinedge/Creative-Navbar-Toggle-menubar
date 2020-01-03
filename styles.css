@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Boogaloo&display=swap");
+body {
+  background: #F06D06;
+  padding: 2rem 4rem 2rem 8rem;
+  color: #fff;
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.csstransforms .main-nav {
+  position: absolute;
+  top: 2.4rem;
+  left: 2rem;
+  width: 20rem;
+  border: solid 1rem #fff;
+  background: rgba(240, 109, 6, 0.75);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 4rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: scale(0.11) translateZ(0);
+          transform: scale(0.11) translateZ(0);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  cursor: pointer;
+}
+
+.csstransforms .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.csstransforms .main-nav a {
+  font-family: "Boogaloo", cursive;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 0 2rem 0;
+  padding: 0.5rem;
+  color: transparent;
+}
+
+.csstransforms .main-nav a:focus, .csstransforms .main-nav a:hover {
+  background: #000;
+  color: #fff !important;
+}
+
+.csstransforms .main-nav li {
+  background: #fff;
+  display: block;
+  padding: 0;
+}
+
+.csstransforms .main-nav li:last-child a {
+  margin: 0;
+}
+
+.csstransforms .main-nav.open {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  padding: 2rem;
+}
+
+.csstransforms .main-nav.open ul {
+  pointer-events: auto;
+}
+
+.csstransforms .main-nav.open a {
+  color: #000;
+}
+
+.csstransforms .main-nav.open .close-button {
+  opacity: 1;
+}
+
+.csstransforms .main-nav .close-button {
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: #F06D06;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  outline: 0;
+}
+
+.csstransforms .main-nav .close-button span {
+  position: relative;
+  top: -3px;
+}
+
+.csstransforms .main-nav .close-button:hover, .csstransforms .main-nav .close-button:active {
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Boogaloo', cursive;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+/*# sourceMappingURL=styles.css.map */
